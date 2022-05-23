@@ -1,0 +1,48 @@
+---
+spring:
+  datasource:
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/heritage
+  jpa:
+    show-sql: true
+  config:
+    activate:
+      on-profile: default
+---
+
+spring:
+  datasource:
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/heritage
+  jpa:
+    show-sql: true
+  config:
+    activate:
+      on-profile: development
+
+---
+
+spring:
+  datasource:
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/heritage
+  jpa:
+    show-sql: true
+  config:
+    activate:
+      on-profile: qa
+---
+
+spring:
+  datasource:
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/heritage
+  jpa:
+    show-sql: true
+  config:
+    activate:
+      on-profile: prod
